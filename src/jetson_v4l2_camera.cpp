@@ -1,11 +1,13 @@
 /**
- * @copyright Chungbuk National University, Autonomous Vehicle Laboratory, 2026. All rights reserved.
- *            Subject to limited distribution and restricted disclosure only.
+ * @copyright Chungbuk National University, Autonomous Vehicle Laboratory, 2026.
+ *            Licensed under the Apache License, Version 2.0 (see LICENSE).
  *
  * @file      jetson_v4l2_camera.cpp
  * @brief     GMSL2 camera node implementation (pipeline, capture loop, stamping, publishing)
  *
  * @date      2026-10-24 created by Junhyeok Seo (jun2342@chungbuk.ac.kr)
+ *            2026-10-26 updated by Junhyeok Seo (jun2342@chungbuk.ac.kr)
+ *              : rename package to jetson_v4l2_camera, license under Apache-2.0
  */
 
 #include "jetson_v4l2_camera/jetson_v4l2_camera.hpp"

@@ -1,11 +1,13 @@
 /**
- * @copyright Chungbuk National University, Autonomous Vehicle Laboratory, 2026. All rights reserved.
- *            Subject to limited distribution and restricted disclosure only.
+ * @copyright Chungbuk National University, Autonomous Vehicle Laboratory, 2026.
+ *            Licensed under the Apache License, Version 2.0 (see LICENSE).
  *
  * @file      jetson_v4l2_camera.hpp
  * @brief     GMSL2 camera node: V4L2 capture via GStreamer, hardware JPEG, capture-time stamps
  *
  * @date      2026-10-24 created by Junhyeok Seo (jun2342@chungbuk.ac.kr)
+ *            2026-10-26 updated by Junhyeok Seo (jun2342@chungbuk.ac.kr)
+ *              : rename package to jetson_v4l2_camera, license under Apache-2.0
  *
  * Timestamps:
  *   v4l2src gives every buffer PTS = (V4L2 buffer timestamp) - (pipeline base time) when the pipeline clock is
