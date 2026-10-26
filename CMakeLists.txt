@@ -24,5 +24,6 @@ ament_target_dependencies(jetson_v4l2_camera_node rclcpp sensor_msgs camera_info
 target_link_libraries(jetson_v4l2_camera_node PkgConfig::GST)
 
 install(TARGETS jetson_v4l2_camera_node DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME})
 
 ament_package()

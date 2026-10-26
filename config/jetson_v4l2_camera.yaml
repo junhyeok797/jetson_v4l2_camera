@@ -1,0 +1,20 @@
+# Example parameters for jetson_v4l2_camera_node.
+# camera_name, device and pipeline are set by the launch file arguments.
+/**:
+  ros__parameters:
+    # Capture mode: must be a mode listed by `v4l2-ctl -d <device> --list-formats-ext`
+    width: 1920
+    height: 1080
+    framerate: 30
+    pixel_format: UYVY
+    jpeg_quality: 95
+
+    # "v4l2": kernel capture time (default), "receive": time the JPEG reaches the node (debug only)
+    timestamp_source: v4l2
+    # Subtracted from the capture time; measure per camera (e.g. LED + PPS test)
+    latency_offset_ns: 0
+
+    # Calibration file, e.g. file:///path/to/camera.yaml. Empty: CameraInfo carries the image size only
+    camera_info_url: ""
+    camera_info_rate: 1.0   # Hz, 0 disables CameraInfo
+    stats_period: 10.0      # s, interval of the fps / missing-frame log
